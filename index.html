@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casamento | Lauryene & Gabriel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo" onclick="navigateTo('home'); return false;">L & G</a>
+            <ul class="nav-links">
+                <li><a href="#" class="nav-link" onclick="navigateTo('home'); return false;">Início</a></li>
+                <li><a href="#" class="nav-link" onclick="navigateTo('gifts'); return false;">Lista de Presentes</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="main-view">
+        <header class="hero" id="home">
+            <!-- A foto de fundo do topo é definida no style.css (.parallax-bg) -->
+            <div class="parallax-bg"></div>
+            <div class="overlay"></div>
+            <div class="floral-arch" aria-hidden="true">
+                <img src="flores-canto.svg" alt="" class="floral-corner floral-corner-left">
+                <img src="flores-canto.svg" alt="" class="floral-corner floral-corner-right">
+            </div>
+            <div class="hero-content reveal">
+                <h1>Lauryene & Gabriel</h1>
+                <p>O começo do nosso "para sempre"</p>
+            </div>
+            <div class="scroll-indicator">
+                <span>↓</span>
+            </div>
+        </header>
+
+        <section class="countdown-section section-padding" id="timer">
+            <img src="flores-canto.svg" alt="" aria-hidden="true" class="floral-accent floral-accent-bl">
+            <img src="flores-canto.svg" alt="" aria-hidden="true" class="floral-accent floral-accent-tr">
+            <div class="container reveal">
+                <h2>Contagem Regressiva</h2>
+                <p class="subtitle">Mal podemos esperar para celebrar com você!</p>
+                <!-- A data do casamento é definida no script.js (weddingDate) -->
+                <div class="countdown-container">
+                    <div class="time-box"><span id="days">00</span><p>Dias</p></div>
+                    <div class="time-box"><span id="hours">00</span><p>Horas</p></div>
+                    <div class="time-box"><span id="minutes">00</span><p>Minutos</p></div>
+                    <div class="time-box"><span id="seconds">00</span><p>Segundos</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="photo-carousel-section section-padding" id="gallery">
+            <div class="container reveal">
+                <h2>Nossa História</h2>
+                <!-- TODO: escrever a história do casal -->
+                <p class="subtitle">Texto modelo: conte aqui como vocês se conheceram, o primeiro encontro, os momentos
+                    especiais e o pedido de casamento. Um ou dois parágrafos curtos costumam funcionar melhor.</p>
+                <div class="carousel-container">
+                    <div class="carousel-inner">
+                        <!-- TODO: trocar pelas fotos do casal (salve os arquivos nesta pasta e coloque o nome no "src") -->
+                        <div class="carousel-item active"><img src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1200&h=800&auto=format&fit=crop" alt="Foto 1 do casal"></div>
+                        <div class="carousel-item"><img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=1200&h=800&auto=format&fit=crop" alt="Foto 2 do casal"></div>
+                    </div>
+                    <button class="carousel-control prev" id="prevBtn">&#10094;</button>
+                    <button class="carousel-control next" id="nextBtn">&#10095;</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="gifts-section section-padding" id="gifts">
+            <div class="container reveal">
+                <h2>Lista de Presentes</h2>
+                <p class="subtitle">Sua presença é o nosso maior presente. Mas, se desejar nos abençoar com algo mais, escolha uma das opções abaixo.</p>
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Buscar presente por nome...">
+                </div>
+                <!-- Os presentes são cadastrados no script.js (giftsData) -->
+                <div class="gifts-grid" id="gifts-container">
+                    </div>
+            </div>
+        </section>
+
+        <!-- Lista de presentes em loja (modelo: Havan) -->
+        <section class="havan-section section-padding" id="havan">
+            <img src="flores-canto.svg" alt="" aria-hidden="true" class="floral-accent floral-accent-tl">
+            <div class="container reveal">
+                <div class="havan-content">
+
+                    <!-- Lado Esquerdo: Logo da loja -->
+                    <div class="havan-logo-container">
+                        <img src="logo-havan.png" alt="Lista de Presentes Havan" class="havan-logo">
+                    </div>
+
+                    <!-- Lado Direito: Informações, Link e QR Code -->
+                    <div class="havan-info">
+                        <h2>Nossa Lista na Havan</h2>
+                        <p>Acesse nossa lista de presentes da Havan. Lá você encontra diversas opções incríveis para o nosso novo lar!</p>
+
+                        <div class="havan-actions">
+                            <!-- TODO: trocar "#" pelo link da lista na Havan -->
+                            <a href="#" target="_blank" class="btn-havan">Acessar a Lista</a>
+
+                            <div class="havan-qr-box">
+                                <!-- TODO: trocar "LINK_DA_LISTA_HAVAN" pelo link da lista (o QR Code é gerado a partir dele) -->
+                                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=LINK_DA_LISTA_HAVAN" alt="QR Code Havan" class="havan-qr">
+                                <span>Escaneie pelo celular</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lista de presentes em loja (modelo: Shopee) -->
+        <section class="havan-section shopee-section section-padding" id="shopee">
+            <div class="container reveal">
+                <div class="havan-content">
+
+                    <!-- Lado Esquerdo: Painel da Shopee -->
+                    <div class="havan-logo-container">
+                        <div class="shopee-logo" role="img" aria-label="Lista de Presentes Shopee">
+                            <svg viewBox="0 0 64 64" aria-hidden="true">
+                                <path d="M14 22h36l-3 32a4 4 0 0 1-4 3.6H21a4 4 0 0 1-4-3.6z" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/>
+                                <path d="M24 22v-4a8 8 0 0 1 16 0v4" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                            </svg>
+                            <span>Shopee</span>
+                        </div>
+                    </div>
+
+                    <!-- Lado Direito: Informações, Link e QR Code -->
+                    <div class="havan-info">
+                        <h2>Nossa Lista na Shopee</h2>
+                        <p>Também montamos uma lista na Shopee, com itens para o dia a dia da nossa casa. Escolha o seu favorito!</p>
+
+                        <div class="havan-actions">
+                            <!-- TODO: trocar "#" pelo link da lista na Shopee -->
+                            <a href="#" target="_blank" class="btn-havan btn-shopee">Acessar a Lista</a>
+
+                            <div class="havan-qr-box">
+                                <!-- TODO: trocar "LINK_DA_LISTA_SHOPEE" pelo link da lista (o QR Code é gerado a partir dele) -->
+                                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=LINK_DA_LISTA_SHOPEE" alt="QR Code Shopee" class="havan-qr">
+                                <span>Escaneie pelo celular</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contribuição Geral via PIX (chave e recebedor ficam no script.js) -->
+        <section class="contribution-section section-padding" id="contribuicao">
+            <img src="flores-canto.svg" alt="" aria-hidden="true" class="floral-accent floral-accent-tr">
+            <div class="container reveal">
+                <h2>Ou simplesmente contribua com um valor</h2>
+
+                <div class="contribution-box">
+                    <label class="contribution-sentence" for="contribution-value">
+                        Quero contribuir com
+                        <span class="contribution-input-wrapper">
+                            <span class="contribution-currency">R$</span>
+                            <input type="text" id="contribution-value" inputmode="numeric" placeholder="0,00" autocomplete="off" oninput="onContributionInput(this)">
+                        </span>
+                        reais
+                    </label>
+
+                    <div id="contribution-loading" class="contribution-loading hidden" role="status" aria-live="polite">
+                        <span class="spinner" aria-hidden="true"></span>
+                        <span>Gerando Pix</span>
+                    </div>
+
+                    <div id="contribution-result" class="hidden pix-result contribution-result">
+                        <img src="" alt="QR Code PIX" id="contribution-qr-code" class="qr-code">
+                        <p style="margin-bottom: 10px; font-size: 0.9rem;">Pix Copia e Cola:</p>
+                        <div class="pix-key-box">
+                            <span id="contribution-pix-text" style="font-size: 0.8rem;"></span>
+                            <button class="btn-copy" onclick="copyContributionPix()"><b>COPIAR</b></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Endereço para entrega dos presentes -->
+        <section class="address-section section-padding" id="endereco">
+            <img src="flores-canto.svg" alt="" aria-hidden="true" class="floral-accent floral-accent-tl">
+            <div class="container reveal">
+                <h2>Entrega dos Presentes</h2>
+                <p class="subtitle">Prefere comprar em outra loja ou entregar o presente pessoalmente? Fique à vontade!
+                    Você pode enviar ou levar direto para o endereço abaixo:</p>
+                <div class="address-box">
+                    <svg class="address-icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z" fill="currentColor"/>
+                    </svg>
+                    <!-- TODO: preencher o endereço (o botão "Copiar endereço" copia o texto daqui) -->
+                    <address id="address-text">
+                        Rua Exemplo, 123<br>
+                        Bairro Exemplo<br>
+                        Cidade - UF<br>
+                        CEP 00000-000
+                    </address>
+
+                    <div class="address-actions">
+                        <button class="btn-address" onclick="copyAddress()">Copiar endereço</button>
+                        <!-- TODO: trocar "Rua+Exemplo,+123,+Cidade+-+UF" pelo endereço, usando + no lugar dos espaços -->
+                        <a href="https://www.google.com/maps/search/?api=1&query=Rua+Exemplo,+123,+Cidade+-+UF" target="_blank" class="btn-address btn-address-outline">Ver no mapa</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <img src="flores-divisor.svg" alt="" aria-hidden="true" class="footer-flowers">
+            <p>Com amor, Lauryene & Gabriel © 2026</p>
+        </footer>
+    </div>
+
+    <div id="details-view" class="details-screen hidden">
+        <div class="container">
+            <button class="btn-back" onclick="closeDetails()">&#10094; Voltar para a lista</button>
+            <div class="details-layout" id="details-content">
+                </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

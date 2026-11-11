@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 420" width="420" height="420">
+  <defs>
+    <!-- Folha -->
+    <g id="folha">
+      <path d="M0 0 C 16 -24 46 -30 66 -16 C 48 10 16 18 0 0 Z" fill="#2e6417"/>
+      <path d="M4 -1 C 22 -12 44 -17 62 -16" fill="none" stroke="#1d4a0d" stroke-width="1.6" stroke-linecap="round"/>
+    </g>
+
+    <!-- Flor grande em leque (magenta + laranja) -->
+    <g id="flor-grande">
+      <g fill="#f47b20">
+        <path d="M0 0 C -8 -22 -7 -44 0 -62 C 7 -44 8 -22 0 0 Z" transform="rotate(-96)"/>
+        <path d="M0 0 C -8 -22 -7 -44 0 -62 C 7 -44 8 -22 0 0 Z" transform="rotate(-62)"/>
+        <path d="M0 0 C -8 -22 -7 -44 0 -62 C 7 -44 8 -22 0 0 Z" transform="rotate(-28)"/>
+        <path d="M0 0 C -8 -22 -7 -44 0 -62 C 7 -44 8 -22 0 0 Z" transform="rotate(6)"/>
+        <path d="M0 0 C -8 -22 -7 -44 0 -62 C 7 -44 8 -22 0 0 Z" transform="rotate(40)"/>
+        <path d="M0 0 C -8 -22 -7 -44 0 -62 C 7 -44 8 -22 0 0 Z" transform="rotate(74)"/>
+      </g>
+      <g fill="#a91b60">
+        <path d="M0 0 C -18 -18 -18 -40 0 -52 C 18 -40 18 -18 0 0 Z" transform="rotate(-78)"/>
+        <path d="M0 0 C -18 -18 -18 -40 0 -52 C 18 -40 18 -18 0 0 Z" transform="rotate(-44)"/>
+        <path d="M0 0 C -18 -18 -18 -40 0 -52 C 18 -40 18 -18 0 0 Z" transform="rotate(-10)"/>
+        <path d="M0 0 C -18 -18 -18 -40 0 -52 C 18 -40 18 -18 0 0 Z" transform="rotate(24)"/>
+        <path d="M0 0 C -18 -18 -18 -40 0 -52 C 18 -40 18 -18 0 0 Z" transform="rotate(58)"/>
+      </g>
+      <circle r="8" fill="#f47b20"/>
+      <circle r="3.5" fill="#a91b60"/>
+    </g>
+
+    <!-- Botão sino (magenta com pontos e estames laranja) -->
+    <g id="botao">
+      <path d="M-13 -2 C -13 -10 13 -10 13 -2 C 13 16 7 27 0 32 C -7 27 -13 16 -13 -2 Z" fill="#a91b60"/>
+      <g fill="#ffffff">
+        <circle cx="-6" cy="9" r="2.1"/>
+        <circle cx="0" cy="14" r="2.1"/>
+        <circle cx="6" cy="9" r="2.1"/>
+        <circle cx="0" cy="3" r="2.1"/>
+      </g>
+      <g fill="none" stroke="#f47b20" stroke-width="2.4" stroke-linecap="round">
+        <path d="M-8 29 C -10 36 -11 40 -12 45"/>
+        <path d="M0 32 L 0 47"/>
+        <path d="M8 29 C 10 36 11 40 12 45"/>
+      </g>
+    </g>
+
+    <!-- Rosa espiral (laranja com contorno magenta) -->
+    <g id="rosa">
+      <circle r="19" fill="#a91b60"/>
+      <circle r="15" fill="#f47b20"/>
+      <path d="M0 -9 A 9 9 0 1 1 -7 7 A 5.5 5.5 0 1 0 3.5 3.5" fill="none" stroke="#a91b60" stroke-width="2.6" stroke-linecap="round"/>
+    </g>
+
+    <!-- Gavinha (cachinho verde) -->
+    <g id="gavinha">
+      <path d="M0 0 C 22 -12 34 6 20 14 C 11 19 7 7 16 4" fill="none" stroke="#2e6417" stroke-width="3" stroke-linecap="round"/>
+    </g>
+  </defs>
+
+  <!-- Ramos principais -->
+  <g fill="none" stroke="#2e6417" stroke-width="4.5" stroke-linecap="round">
+    <path d="M2 400 C 12 300 34 190 108 116 C 182 42 300 16 418 10"/>
+    <path d="M6 268 C 58 250 86 202 110 146" stroke-width="3.4"/>
+    <path d="M152 78 C 196 128 254 142 306 112" stroke-width="3.4"/>
+    <path d="M258 46 C 300 74 352 76 402 58" stroke-width="3"/>
+    <path d="M40 208 C 22 250 26 296 44 330" stroke-width="3"/>
+  </g>
+
+  <!-- Folhagem -->
+  <g>
+    <use href="#folha" transform="translate(30,300) rotate(200) scale(1.05)"/>
+    <use href="#folha" transform="translate(22,262) rotate(-40) scale(0.9)"/>
+    <use href="#folha" transform="translate(48,232) rotate(150) scale(1)"/>
+    <use href="#folha" transform="translate(58,186) rotate(-58) scale(1.1)"/>
+    <use href="#folha" transform="translate(76,166) rotate(120) scale(0.85)"/>
+    <use href="#folha" transform="translate(104,124) rotate(-46) scale(1.15)"/>
+    <use href="#folha" transform="translate(126,116) rotate(112) scale(0.95)"/>
+    <use href="#folha" transform="translate(166,74) rotate(-32) scale(1.1)"/>
+    <use href="#folha" transform="translate(186,82) rotate(96) scale(0.9)"/>
+    <use href="#folha" transform="translate(232,46) rotate(-24) scale(1.05)"/>
+    <use href="#folha" transform="translate(246,58) rotate(88) scale(0.85)"/>
+    <use href="#folha" transform="translate(300,30) rotate(-16) scale(1.1)"/>
+    <use href="#folha" transform="translate(322,42) rotate(80) scale(0.9)"/>
+    <use href="#folha" transform="translate(368,22) rotate(-12) scale(1)"/>
+    <use href="#folha" transform="translate(214,118) rotate(56) scale(0.9)"/>
+    <use href="#folha" transform="translate(276,128) rotate(20) scale(0.85)"/>
+    <use href="#folha" transform="translate(340,74) rotate(40) scale(0.9)"/>
+    <use href="#folha" transform="translate(14,340) rotate(-70) scale(0.9)"/>
+    <use href="#folha" transform="translate(36,368) rotate(160) scale(0.8)"/>
+  </g>
+
+  <!-- Gavinhas -->
+  <g>
+    <use href="#gavinha" transform="translate(70,246) rotate(120) scale(1)"/>
+    <use href="#gavinha" transform="translate(146,58) rotate(-40) scale(0.9)"/>
+    <use href="#gavinha" transform="translate(388,36) rotate(30) scale(0.9)"/>
+    <use href="#gavinha" transform="translate(18,196) rotate(-150) scale(0.85)"/>
+  </g>
+
+  <!-- Flores -->
+  <use href="#flor-grande" transform="translate(64,140) rotate(-118) scale(1.15)"/>
+  <use href="#flor-grande" transform="translate(316,62) rotate(-40) scale(1.05)"/>
+  <use href="#rosa" transform="translate(150,104) scale(1.05)"/>
+  <use href="#rosa" transform="translate(386,88) scale(0.85)"/>
+  <use href="#rosa" transform="translate(22,232) scale(0.75)"/>
+  <use href="#botao" transform="translate(112,42) rotate(-24) scale(0.95)"/>
+  <use href="#botao" transform="translate(238,96) rotate(14) scale(0.9)"/>
+  <use href="#botao" transform="translate(44,296) rotate(-8) scale(0.9)"/>
+  <use href="#botao" transform="translate(350,118) rotate(26) scale(0.85)"/>
+  <use href="#botao" transform="translate(196,26) rotate(6) scale(0.75)"/>
+</svg>
